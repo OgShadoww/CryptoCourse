@@ -140,6 +140,7 @@
     background: linear-gradient(90deg, #F78BFF 0%, #FEAF80 100%);
     border-radius: 10px;
     border: none;
+    color: #000;
 }
 @media (max-width: 768px) { 
     .header {
