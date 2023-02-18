@@ -11,10 +11,10 @@
     border-bottom: 1px solid rgba(221, 222, 255, 0.2);;
     transition: .3s;
     z-index: 1000;
+    background: rgba(10, 9, 21, 0.7);
 }
 .header_schroll {
     backdrop-filter: blur(8px);
-    background: rgba(10, 9, 21, 0.7);
 }
 .adaptive-header {
     display: none;
