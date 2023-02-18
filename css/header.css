@@ -129,14 +129,14 @@
     flex-direction: column;
     padding: 20px 25px;
     gap: 20px;
-    text-align: center;
 }
 .menu__content__body__item {
     color: #F5F6FF;
 }
 .menu__content__body__button {
     margin-top: 10px;
-    padding: 12px 10px;
+    padding: 14px 10px;
+    font-size: 16px;
     background: linear-gradient(90deg, #F78BFF 0%, #FEAF80 100%);
     border-radius: 10px;
     border: none;
