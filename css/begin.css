@@ -1,0 +1,92 @@
+.begin-page {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 100px;
+    gap: 50px;
+}
+.begin-page__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.begin-page__info__title {
+    background: linear-gradient(180deg, #FFB179 0%, #E78DD7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 600;
+}
+.begin-page__info__subtitle {
+    color: rgba(160, 160, 164, 0.45);
+    font-size: 16px;
+}
+.begin-page__info__button {
+    cursor: pointer;
+    width: 200px;
+    background: linear-gradient(90deg, #F78BFF 0%, #FEAF80 100%);
+    border: none;
+    padding: 8px 10px;
+    gap: 6px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.begin-page__info__info {
+    display: flex;
+    gap: 80px;
+    margin-top: 30px;
+}
+.begin-page__info__info__item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 8px;
+}
+.begin-page__info__info__item__subtitle {
+    color: #A0A0A4;
+    font-size: 14px;
+}
+.begin-page__info__info__item__title {
+    color: #F5F6FF;
+    font-size: 14px;
+}
+.begin-page__photo {
+    position: relative;
+
+}
+.begin-page__photo__link {
+    background: rgba(248, 239, 255, 0.15);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 40px;
+    padding-left: 12px;
+    backdrop-filter: blur(50px);
+    padding-right: 12px;
+    min-width: 150px;
+    max-width: 180px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .4s;
+}
+.begin-page__photo__link:hover {
+    transition: .3s;
+    background-color: rgba(255, 255, 255, .2);;
+}
+.begin-page__photo__link__icon {
+    width: 20px;
+}
+.begin-page__photo__image {
+    width: 690px;
+}
