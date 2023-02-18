@@ -50,3 +50,8 @@ a {
 .cursor-pointer {
     cursor: pointer;
 }
+@media (max-width: 650px) {
+    .begin-page__info__light {
+        display: none;
+    }
+}

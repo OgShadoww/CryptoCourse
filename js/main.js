@@ -20,20 +20,22 @@ let heroLight = document.querySelector('.begin-page__info__light')
 let heroPhotoLink = document.querySelector('.begin-page__photo__link')
 
 document.addEventListener('scroll', () => {
-    if(window.scrollY > 100) {
+    if(window.scrollY > 30) {
         header.forEach(header => {
             header.classList.add('header_schroll')
         })
     }
     if(window.scrollY >= 10 && window.screenY < 300) {
         heroLight.style.transform = `translateY(-${window.scrollY / 2}px)`
-        heroPhotoLink.style.transform = `translateY(-${window.scrollY / 6}px)`
+        heroPhotoLink.style.transform = `translateY(-${window.scrollY / 8}px)`
+    }
+    if(window.scrollY > 300) {
+        heroLight.style.transform = 'translateY(0)'
+        heroPhotoLink.style.transform = 'translateY(0)'
     }
     else {
         header.forEach(header => {
             header.classList.remove('header_schroll')
-            heroLight.style.transform = `translateY(0)`
-            heroPhotoLink.style.transform = `translateY(0)`
         })
     }
 })
