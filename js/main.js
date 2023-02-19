@@ -52,7 +52,7 @@ document.addEventListener('scroll', () => {
     if(window.scrollY >= course.scrollHeight - 300) {
         courseItemOne.style.transform = `translate(0px)`
         courseItemTwo.style.transform = `translate(0px)`
-        courseBear.style.transform = `translateY(0px)`
+        courseBear.style.transform = `translateY(-20px)`
     }
     else {
         header.forEach(header => {
