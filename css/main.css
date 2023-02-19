@@ -10,7 +10,6 @@ body {
     background-color: #080615;
     font-family: 'Exo 2';
     color: #fff;
-    height: 10000px;
 }
 a {
     text-decoration: none;
@@ -20,6 +19,7 @@ a {
     height: 100%;
     overflow: hidden;
     padding-top: 80px;
+    padding-bottom: 100px;
 }
 .title {
     color: #F6A49C;
