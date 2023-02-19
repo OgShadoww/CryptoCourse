@@ -137,6 +137,8 @@
     }
     .begin-page__info__button {
         width: 100%;
+        font-size: 16px;
+        padding: 12px 18px;
     }
     .begin-page__photo__link {
         min-width: 120px;
