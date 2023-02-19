@@ -157,6 +157,12 @@
         display: none;
     }
 }
+@media (max-width: 650px) {
+    .title {
+        font-size: 20px;
+        line-height: normal;
+    }
+}
 @media (max-width: 500px) { 
     .adaptive-header {
         padding: 12px 30px;

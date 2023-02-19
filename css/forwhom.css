@@ -1,0 +1,130 @@
+.forwhom {
+    padding-bottom: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.forwhom__title {
+    text-align: left;
+}
+.forwhom__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.forwhom__cards__item {
+    position: relative;
+    background: rgba(255, 156, 227, 0.15);
+    border: 1px solid #F6A49C;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 250px;  
+    text-align: left;
+    transition: 2s;
+}
+#forwhom__cards__item_1 {
+    transform: translateX(-50%);
+}
+#forwhom__cards__item_2 {
+    transform: translateX(50%);
+}
+#forwhom__cards__item_3 {
+    transform: translateY(80%);
+}
+.forwhom__cards__item__icon {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+}
+#forwhom__cards__item__icon_1 {
+    width: 185px;
+    height: 250px;
+}
+#forwhom__cards__item__icon_2 {
+    width: 175px;
+    height: 250px;
+}
+#forwhom__cards__item__icon_3 {
+    width: 210.5px;
+    height: 255px;
+}
+.forwhom__cards__item__text {
+    color: #E9E5FF;
+    margin-left: 200px;
+}
+.forwhom__cards__light {
+    left: 0;
+    top: -5%;
+    width: 500px;
+}
+.forwhom__cards__line__light {
+    left: 5%;
+    top: -40%;
+    width: 400px;
+}
+@media (max-width: 1189px) {
+    #forwhom__cards__item__icon_1 {
+        width: 175px;
+        height: 240px;
+    }
+    #forwhom__cards__item__icon_2 {
+        width: 165px;
+        height: 240px;
+    }
+    #forwhom__cards__item__icon_3 {
+        width: 200.5px;
+        height: 245px;
+    }
+}
+@media (max-width: 650px) {
+    .forwhom__cards__item__text {
+        margin-left: 170px;
+    }
+    #forwhom__cards__item__icon_1 {
+        width: 145px;
+        height: 210px;
+    }
+    #forwhom__cards__item__icon_2 {
+        width: 135px;
+        height: 210px;
+    }
+    #forwhom__cards__item__icon_3 {
+        width: 170.5px;
+        height: 215px;
+    }
+    .forwhom__cards__item {
+        width: 100%;
+        height: 180px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .forwhom__cards__item {
+        height: 160px;
+    }
+    .forwhom__cards__item__text {
+        margin-left: 120px;
+        font-size: 13px;
+    }
+    #forwhom__cards__item__icon_1 {
+        width: 95px;
+        height: 120px;
+        left: 5%;
+    }
+    #forwhom__cards__item__icon_2 {
+        width: 100px;
+        height: 135px;
+        left: 5%;
+    }
+    #forwhom__cards__item__icon_3 {
+        width: 110.5px;
+        height: 130px;
+        left: 5%;
+    }
+}

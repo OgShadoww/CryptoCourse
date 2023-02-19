@@ -14,24 +14,41 @@ burgerMenuClose.addEventListener('click', () => {
 })
 
 // header with schroling
-
 let header = document.querySelectorAll('.header')
+// hero section animation
 let heroLight = document.querySelector('.begin-page__info__light')
 let heroPhotoLink = document.querySelector('.begin-page__photo__link')
+// forwhoum section animation
+let forwhom = document.querySelector('.forwhom__cards')
+let forwhomCard1 = document.querySelector('#forwhom__cards__item_1')
+let forwhomCard2 = document.querySelector('#forwhom__cards__item_2')
+let forwhomCard3 = document.querySelector('#forwhom__cards__item_3')
+let forwhomLight = document.querySelector('.forwhom__cards__light')
 
 document.addEventListener('scroll', () => {
+    // header scroll
     if(window.scrollY > 30) {
         header.forEach(header => {
             header.classList.add('header_schroll')
         })
-    }
+    } 
+    // hero light scroll add
     if(window.scrollY >= 10 && window.screenY < 300) {
         heroLight.style.transform = `translateY(-${window.scrollY / 2}px)`
         heroPhotoLink.style.transform = `translateY(-${window.scrollY / 8}px)`
     }
+    // hero light scroll remove
     if(window.scrollY > 300) {
         heroLight.style.transform = 'translateY(0)'
         heroPhotoLink.style.transform = 'translateY(0)'
+    }
+    // forwhom animate add
+    if(window.scrollY >= forwhom.scrollHeight - forwhom.clientHeight) {
+        console.log('f')
+        forwhomCard1.style.transform = `translateX(0px)`
+        forwhomCard2.style.transform = `translateX(0px)`
+        forwhomCard3.style.transform = `translateY(0px)`
+        forwhomLight.style.transform = `translateY(-${window.scrollY / 2}px)`
     }
     else {
         header.forEach(header => {
