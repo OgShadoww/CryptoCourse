@@ -71,6 +71,9 @@ a {
     .begin-page__info__light {
         display: none;
     }
+    .begin-page__info__light {
+        display: none;
+    }
 }
 @media (max-width: 460px) {
     .container {
