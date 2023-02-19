@@ -139,6 +139,12 @@
     .begin-page__info__button {
         width: 100%;
     }
+    .begin-page__photo__link {
+        min-width: 120px;
+        max-width: 130px;
+        height: 34px;
+        font-size: 13px;
+    }
 }
 @media (max-width: 460px) {
     .begin-page {
