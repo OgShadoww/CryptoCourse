@@ -20,7 +20,6 @@
 }
 .course__cards__item {
     position: relative;
-    backdrop-filter: blur(30px);
     border-radius: 15px;
     padding: 30px 25px;
     padding-bottom: 100px;
