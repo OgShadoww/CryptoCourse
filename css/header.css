@@ -12,7 +12,7 @@
     transition: .3s;
     z-index: 1000;
     background: rgba(10, 9, 21, 0.7);
-    backdrop-filter: blur(8px);
+    /* backdrop-filter: blur(8px); */
 }
 .adaptive-header {
     display: none;
