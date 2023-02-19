@@ -55,7 +55,7 @@ document.addEventListener('scroll', () => {
         // forwhomLight.style.transform = `translateY(-${window.scrollY / 2}px)`
     }
     // course animate add
-    if(window.scrollY >= course.scrollHeight) {
+    if(window.scrollY >= course.scrollHeight - 300) {
         courseItemOne.style.transform = `translate(0px)`
         courseItemTwo.style.transform = `translate(0px)`
         courseBear.style.transform = `translateY(0px)`
