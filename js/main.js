@@ -31,12 +31,6 @@ let courseItemTwo = document.querySelector('.course__cards__item_two')
 let courseBear = document.querySelector('.course__cards__item__bear')
 
 document.addEventListener('scroll', () => {
-    // header scroll
-    if(window.scrollY > 30) {
-        header.forEach(header => {
-            header.classList.add('header_schroll')
-        })
-    } 
     // // hero light scroll add
     // if(window.scrollY >= 10 && window.screenY < 300) {
     //     heroLight.style.transform = `translateY(-${window.scrollY / 2}px)`
