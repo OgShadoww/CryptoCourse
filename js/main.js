@@ -15,15 +15,11 @@ burgerMenuClose.addEventListener('click', () => {
 
 // header with schroling
 let header = document.querySelectorAll('.header')
-// hero section animation
-let heroLight = document.querySelector('.begin-page__info__light')
-let heroPhotoLink = document.querySelector('.begin-page__photo__link')
 // forwhoum section animation
 let forwhom = document.querySelector('.forwhom__cards')
 let forwhomCard1 = document.querySelector('#forwhom__cards__item_1')
 let forwhomCard2 = document.querySelector('#forwhom__cards__item_2')
 let forwhomCard3 = document.querySelector('#forwhom__cards__item_3')
-let forwhomLight = document.querySelector('.forwhom__cards__light')
 // course section animation
 let course = document.querySelector('.course')
 let courseItemOne = document.querySelector('.course__cards__item_one')
@@ -31,16 +27,6 @@ let courseItemTwo = document.querySelector('.course__cards__item_two')
 let courseBear = document.querySelector('.course__cards__item__bear')
 
 document.addEventListener('scroll', () => {
-    // // hero light scroll add
-    // if(window.scrollY >= 10 && window.screenY < 300) {
-    //     heroLight.style.transform = `translateY(-${window.scrollY / 2}px)`
-    //     heroPhotoLink.style.transform = `translateY(-${window.scrollY / 8}px)`
-    // }
-    // // hero light scroll remove
-    // if(window.scrollY > 300) {
-    //     heroLight.style.transform = 'translateY(0)'
-    //     heroPhotoLink.style.transform = 'translateY(0)'
-    // }
     // forwhom animate add
     if(window.scrollY >= forwhom.scrollHeight - forwhom.clientHeight) {
         forwhomCard1.style.transform = `translateX(0px)`
@@ -59,4 +45,25 @@ document.addEventListener('scroll', () => {
             header.classList.remove('header_schroll')
         })
     }
+})
+
+// accordion
+
+let accordionItemHeader = document.querySelectorAll('.accordion__item__header').forEach(el => {
+    let parent = el.parentElement
+    let content = el.nextElementSibling
+    let plus = el.querySelector('.accordion__item__header__open__icon')
+
+    el.addEventListener('click', () => {
+        content.classList.toggle('active')
+        parent.classList.toggle('active')
+        plus.classList.toggle('active')
+    })
+})
+
+// scroll to begin
+let toBegin = document.querySelector('.footer__top__up')
+toBegin.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 })

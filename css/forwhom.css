@@ -6,7 +6,7 @@
     gap: 50px;
 }
 .forwhom__title {
-    text-align: left;
+    text-align: center;
 }
 .forwhom__cards {
     display: flex;

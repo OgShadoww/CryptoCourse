@@ -1,0 +1,120 @@
+.footer {
+    border-top: 1px solid rgba(221, 222, 255, 0.2);
+    display: flex;
+    flex-direction: column;    
+    gap: 40px;
+}
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.footer__top__links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer__top__links__button {
+    border: 1px solid #444445;
+    border-radius: 50px;
+    background: transparent;
+    color: #E9E5FF;
+    padding: 12px 16px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.join {
+    background: linear-gradient(90deg, #FFB68D 0%, #FF4BCD 100%);
+    color: #090716;
+}
+.footer__top__up {
+    position: relative;
+    border: 1px solid #E9E5FF;
+    background: transparent;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+}
+.footer__top__up__icon {
+    width: 20px;
+    height: 20px;
+}
+.footer__top__up__light {
+    width: 400px;
+    left: -500%;
+    top: 0;
+}
+.footer__middle {
+    display: flex;
+    justify-content: start;
+    gap: 100px;
+}
+.footer__middle__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+.footer__middle__nav__title {
+    color: #FFB68D;
+    display: flex;
+    gap: 20px;
+}
+.footer__middle__nav__title__right {
+    width: 20px;
+}
+.footer__middle__nav__item {
+    color: #bfbbd5;
+    font-size: 15px;
+}
+.footer__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+}
+.footer__bottom__privacy-policy {
+    color: #C8C3E0;
+    font-size: 13px;
+}
+@media (max-width: 650px) { 
+    .footer__top {
+        align-items: center;
+        justify-content: space-around
+    }
+    .footer__top__links {
+        flex-direction: column;
+    }
+    .footer__middle {
+        align-items: start;
+        justify-content: center;
+    }
+    .footer__bottom {
+        align-items: center;
+    }
+}
+@media (max-width: 500px) { 
+    .footer__top {
+        justify-content: space-between;
+        gap: 20px;
+        align-items: start;
+    }
+    .footer__top__links {
+        align-items: start;
+    }
+    .footer__middle {
+        flex-direction: column;
+        align-items: start;
+        text-align: start;
+        gap: 40px;
+    }
+    .footer__middle__nav__title {
+        gap: 10px;
+    }
+    .footer__bottom {
+        align-items: start;
+    }
+}

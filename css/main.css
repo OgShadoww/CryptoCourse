@@ -24,6 +24,7 @@ a {
 .title {
     color: #F6A49C;
     font-size: 42px;
+    text-align: center;
 }
 .container {
     padding: 100px 100px;
