@@ -41,7 +41,7 @@
     transform: translateX(70%);
     position: relative;
     bottom: -50px;
-    width: 340px;
+    /* width: 340px; */
 }
 .course__cards__item__etherium {
     position: absolute;
