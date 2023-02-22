@@ -114,6 +114,7 @@
     }
     .begin-page__info__title {
         white-space: normal;
+        text-align: center;
     }
     .begin-page__photo__link {
         left: 30%;
