@@ -116,11 +116,15 @@
     }
 }
 @media (max-width: 460px) { 
+    .accordion__item__header {
+        gap: 10px;
+    }
     .accordion__item {
         height: 40px;
     }
     .accordion__item.active {
-        height: 80px;
+        height: 85px;
+        padding-bottom: 5px;
     }
     .accordion__item__header__open {
         width: 30px;
