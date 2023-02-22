@@ -1,6 +1,7 @@
 .faq {
     text-align: center;
     position: relative;
+    padding-bottom: 40px;
 }
 .faq__title {
     color: #E9E5FF;

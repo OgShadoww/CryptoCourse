@@ -88,6 +88,8 @@
     }
     .footer__top__links {
         align-items: start;
+        justify-content: start;
+        flex-wrap: wrap;
     }
     .footer__middle {
         flex-direction: column;
