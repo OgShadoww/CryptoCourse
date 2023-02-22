@@ -16,13 +16,14 @@
 .course__cards {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    align-items: end;
+    gap: 30px;
 }
 .course__cards__item {
     position: relative;
     border-radius: 15px;
     padding: 30px 25px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -38,13 +39,15 @@
     background: rgba(255, 255, 255, 0.05);
     border: 2px solid #F6A49C;
     transform: translateX(70%);
-    top: 100px;
+    position: relative;
+    bottom: -50px;
+    width: 340px;
 }
-.course__cards__item__bear {
+.course__cards__item__etherium {
     position: absolute;
-    right: -30%;
-    bottom: -60%;
-    width: 580px;
+    right: -35%;
+    top: -115%;
+    width: 400px;
     transform: translateY(50%);
     transition: transform 2s .6s;
 }
@@ -85,9 +88,7 @@
     border-radius: 16px;
     padding: 15px;
     font-weight: 300;
-}
-.course__cards__item__result span {
-    color: #F6A49C;
+    position: relative;
 }
 @media (max-width: 1130px) { 
     .course__cards__item {

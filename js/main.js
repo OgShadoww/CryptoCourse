@@ -1,5 +1,4 @@
 // burger menu
-
 let burgerMenuOpen = document.querySelector('.burger-menu__open')
 let burgerMenuContent = document.querySelector('.burger-menu__content')
 let burgerMenuClose = document.querySelector('.burger-menu__close')
@@ -11,6 +10,12 @@ burgerMenuOpen.addEventListener('click', () => {
 burgerMenuClose.addEventListener('click', () => {
     burgerMenuContent.classList.remove('active')
     document.body.style.overflow = 'auto'
+})
+// scroll to begin
+let toBegin = document.querySelector('.button__up')
+toBegin.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 })
 
 // header with schroling
@@ -24,9 +29,16 @@ let forwhomCard3 = document.querySelector('#forwhom__cards__item_3')
 let course = document.querySelector('.course')
 let courseItemOne = document.querySelector('.course__cards__item_one')
 let courseItemTwo = document.querySelector('.course__cards__item_two')
-let courseBear = document.querySelector('.course__cards__item__bear')
+let courseBear = document.querySelector('.course__cards__item__etherium')
 
 document.addEventListener('scroll', () => {
+    // button to scroll begin
+    if(window.scrollY > 100) {
+        toBegin.classList.add('active')
+    }
+    else {
+        toBegin.classList.remove('active')
+    }
     // forwhom animate add
     if(window.scrollY >= forwhom.scrollHeight - forwhom.clientHeight) {
         forwhomCard1.style.transform = `translateX(0px)`
@@ -35,10 +47,10 @@ document.addEventListener('scroll', () => {
         // forwhomLight.style.transform = `translateY(-${window.scrollY / 2}px)`
     }
     // course animate add
-    if(window.scrollY >= course.scrollHeight - 300) {
+    if(window.scrollY >= course.scrollHeight - course.clientHeight) {
         courseItemOne.style.transform = `translate(0px)`
         courseItemTwo.style.transform = `translate(0px)`
-        courseBear.style.transform = `translateY(-20px)`
+        courseBear.style.top = `-115%`
     }
     else {
         header.forEach(header => {
@@ -61,9 +73,19 @@ let accordionItemHeader = document.querySelectorAll('.accordion__item__header').
     })
 })
 
-// scroll to begin
-let toBegin = document.querySelector('.footer__top__up')
-toBegin.addEventListener('click', () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+// popup
+let openPopup = document.querySelector('.sidebar')
+let popup = document.querySelector('.popup')
+let popupContent = document.querySelector('.popup__content')
+
+openPopup.addEventListener('click', () => {
+    popup.classList.add('active')
+    popupContent.classList.add('active')
+})
+popup.addEventListener('click', () => {
+    popup.classList.remove('active')
+    popupContent.classList.remove('active')
+})
+popupContent.addEventListener('click', (e) => {
+    e.stopPropagation()
 })

@@ -9,54 +9,52 @@
     text-align: center;
 }
 .forwhom__cards {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 .forwhom__cards__item {
-    position: relative;
-    background: rgba(255, 156, 227, 0.15);
-    border: 1px solid #F6A49C;
     border-radius: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 220px;  
-    text-align: left;
     transition: 2s;
 }
 #forwhom__cards__item_1 {
     transform: translateX(-50%);
 }
 #forwhom__cards__item_2 {
-    transform: translateX(50%);
+    transform: translateY(50%);
 }
 #forwhom__cards__item_3 {
-    transform: translateY(80%);
+    transform: translateX(50%);
 }
 .forwhom__cards__item__icon {
-    position: absolute;
-    left: 0px;
-    bottom: 0;
+    position: relative;
 }
 #forwhom__cards__item__icon_1 {
-    width: 185px;
-    height: 250px;
+    width: 285px;
+    top: 10px;
 }
 #forwhom__cards__item__icon_2 {
-    width: 175px;
-    height: 250px;
+    top: 30px;
+    width: 275px;
 }
 #forwhom__cards__item__icon_3 {
-    width: 210.5px;
+    top: 30px;
+    width: 270.5px;
     height: 255px;
 }
 .forwhom__cards__item__text {
-    color: #E9E5FF;
-    margin-left: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
 }
 .forwhom__cards__light {
     left: 0;

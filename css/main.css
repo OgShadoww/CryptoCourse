@@ -29,6 +29,28 @@ a {
 .container {
     padding: 100px 100px;
 }
+.button__up {
+    opacity: 0;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border: 1px solid #E9E5FF;
+    background: transparent;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
+    transition: opacity .3s;
+}
+.button__up.active {
+    opacity: 1;
+    transition: opacity .3s;
+
+}
+.button__up__icon {
+    width: 20px;
+    height: 20px;
+}
 .flex {
     display: flex;
 }
@@ -81,4 +103,4 @@ a {
         padding: 10px 10px;
         padding-top: 40px;
     }
-}
+} 

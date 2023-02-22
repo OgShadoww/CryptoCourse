@@ -28,19 +28,6 @@
     background: linear-gradient(90deg, #FFB68D 0%, #FF4BCD 100%);
     color: #090716;
 }
-.footer__top__up {
-    position: relative;
-    border: 1px solid #E9E5FF;
-    background: transparent;
-    border-radius: 50%;
-    width: 43px;
-    height: 43px;
-    cursor: pointer;
-}
-.footer__top__up__icon {
-    width: 20px;
-    height: 20px;
-}
 .footer__top__up__light {
     width: 400px;
     left: -500%;
@@ -84,9 +71,6 @@
     .footer__top {
         align-items: center;
         justify-content: space-around
-    }
-    .footer__top__links {
-        flex-direction: column;
     }
     .footer__middle {
         align-items: start;
