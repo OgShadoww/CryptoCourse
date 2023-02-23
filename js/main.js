@@ -1,11 +1,9 @@
 document.body.onload = () => {
-    document.body.style.overflow = 'hidden'
     setTimeout(() => {
         let preloader = document.querySelector('.preloader')
-        
+
         if(!preloader.classList.contains('done')) {
             preloader.classList.add('done')
-            document.body.style.overflow = 'auto'
         }
     }, 1000)
 }
@@ -58,7 +56,7 @@ document.addEventListener('scroll', () => {
         // forwhomLight.style.transform = `translateY(-${window.scrollY / 2}px)`
     }
     // course animate add
-    if(window.scrollY >= course.scrollHeight - course.clientHeight) {
+    if(window.scrollY >= course.scrollHeight) {
         courseItemOne.style.transform = `translate(0px)`
         courseItemTwo.style.transform = `translate(0px)`
         courseEtherium.style.transform = `0%`
@@ -100,3 +98,23 @@ popup.addEventListener('click', () => {
 popupContent.addEventListener('click', (e) => {
     e.stopPropagation()
 })
+// hover effect
+
+let buttonJoin = document.querySelector('.begin-page__info__button')
+let buttonJoinText = document.querySelector('.begin-page__info__button span')
+
+buttonJoin.addEventListener('mouseenter', () => {
+    buttonJoinText.textContent = 'Та отримати бонус'
+})
+buttonJoin.addEventListener('mouseleave', () => {
+    buttonJoinText.textContent = 'Приєднатись зараз'
+})
+
+setInterval(() => {
+    if(buttonJoinText.textContent === 'Та отримати бонус') {
+        buttonJoinText.textContent = 'Приєднатись зараз'
+    }
+    else {
+        buttonJoinText.textContent = 'Та отримати бонус'
+    }
+}, 5000)

@@ -40,6 +40,9 @@
     justify-content: center;
     color: #000;
 }
+.begin-page__info__button__icon {
+    width: 25px;
+}
 .begin-page__info__info {
     display: flex;
     gap: 80px;
