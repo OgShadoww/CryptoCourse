@@ -17,7 +17,7 @@
 }
 .preloader__loader {
     width: 70px;
-    animation: Myrotate 3.75s linear 2.5s infinite alternate none;
+    animation: Myrotate 3.75s infinite;
 }
 @keyframes Myrotate {
     100% {
