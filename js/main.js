@@ -110,11 +110,13 @@ buttonJoin.addEventListener('mouseleave', () => {
     buttonJoinText.textContent = 'Приєднатись зараз'
 })
 
-setInterval(() => {
-    if(buttonJoinText.textContent === 'Та отримати бонус') {
-        buttonJoinText.textContent = 'Приєднатись зараз'
-    }
-    else {
-        buttonJoinText.textContent = 'Та отримати бонус'
-    }
-}, 5000)
+if(window.innerWidth <= 800) {
+    setInterval(() => {
+        if(buttonJoinText.textContent === 'Та отримати бонус') {
+            buttonJoinText.textContent = 'Приєднатись зараз'
+        }
+        else {
+            buttonJoinText.textContent = 'Та отримати бонус'
+        }
+    }, 5000)
+}
