@@ -45,8 +45,8 @@
 }
 .course__cards__item__etherium {
     position: absolute;
-    right: -35%;
-    top: -115%;
+    right: -45%;
+    top: -85%;
     width: 400px;
     transform: translateY(50%);
     transition: transform 2s .6s;
@@ -65,23 +65,13 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-left: 0;
+    padding-left: 10px;
     padding-bottom: 50px;
 }
 .course__cards__item__list__item {
     color: #e0dcf5;
-    list-style: none;
-    display: flex;
-    align-items: center;
+    list-style:disc;
     font-weight: 300;
-}
-.course__cards__item__list__item::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    margin-right: 20px;
-    background: #E9E5FF;
 }
 .course__cards__item__result {
     background: rgba(246, 164, 156, 0.2);
@@ -111,7 +101,7 @@
     }
     .course__cards__item__list {
         font-size: 15px;
-        gap: 15px;
+        gap: 25px;
         padding-bottom: 0;
     }
     .course__cards__item__list__item::before {
@@ -147,13 +137,17 @@
     }
 }
 @media (max-width: 500px) { 
+    .course {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
     .course__cards__item {
         padding-top: 30px;
         padding-bottom: 30px;
         border-radius: 10px;
         gap: 25px;
         max-width: 100%;
-        width: auto;
+        width: 100%;
     }
     .course__cards__item_two {
         transition: transform 2s .4s;
