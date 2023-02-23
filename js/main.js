@@ -1,3 +1,12 @@
+document.body.onload = () => {
+    setTimeout(() => {
+        let preloader = document.querySelector('.preloader')
+        
+        if(!preloader.classList.contains('done')) {
+            preloader.classList.add('done')
+        }
+    }, 1000)
+}
 // burger menu
 let burgerMenuOpen = document.querySelector('.burger-menu__open')
 let burgerMenuContent = document.querySelector('.burger-menu__content')
@@ -40,12 +49,12 @@ document.addEventListener('scroll', () => {
         toBegin.classList.remove('active')
     }
     // forwhom animate add
-    // if(window.scrollY >= forwhom.scrollHeight - forwhom.clientHeight) {
-    //     forwhomCard1.style.transform = `translateX(0px)`
-    //     forwhomCard2.style.transform = `translateX(0px)`
-    //     forwhomCard3.style.transform = `translateY(0px)`
-    //     // forwhomLight.style.transform = `translateY(-${window.scrollY / 2}px)`
-    // }
+    if(window.scrollY >= forwhom.scrollHeight - forwhom.clientHeight) {
+        forwhomCard1.style.transform = `translateX(0px)`
+        forwhomCard2.style.transform = `translateX(0px)`
+        forwhomCard3.style.transform = `translateY(0px)`
+        // forwhomLight.style.transform = `translateY(-${window.scrollY / 2}px)`
+    }
     // course animate add
     if(window.scrollY >= course.scrollHeight - course.clientHeight) {
         courseItemOne.style.transform = `translate(0px)`

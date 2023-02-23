@@ -1,0 +1,26 @@
+.preloader {
+    background: #080615;
+    position: fixed;
+    inset: 0;
+    z-index: 5000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    pointer-events: all;
+}
+.preloader.done {
+    opacity: 0;
+    pointer-events: none;
+}
+.preloader__loader {
+    width: 70px;
+    animation: Myrotate 3.75s linear 2.5s infinite alternate none;
+}
+@keyframes Myrotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
