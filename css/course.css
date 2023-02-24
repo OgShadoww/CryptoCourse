@@ -112,8 +112,9 @@
         padding: 15px;
         font-size: 15px;
     }
-    .course__cards__item__bear {
-        width: 450px;
+    .course__cards__item__ethereum {
+        width: 100px;
+        top: -35%;
         transform: translateY(30%);
     }
 }
@@ -154,5 +155,9 @@
     }
     .course__line__light {
         display: none;
+    }
+    .course__cards__item__ethereum {
+        width: 80px;
+        top: -20%;
     }
 }

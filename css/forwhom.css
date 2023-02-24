@@ -5,9 +5,6 @@
     flex-direction: column;
     gap: 50px;
 }
-.forwhom__title {
-    text-align: center;
-}
 .forwhom__cards {
     position: relative;
     display: flex;
@@ -101,7 +98,7 @@
 @media (max-width: 480px) {
     .forwhom__cards__item__text {
         margin-left: 115px;
-        font-size: 15px;
+        font-size: 14px;
     }
     .forwhom__cards__item {
         height: 160px;
