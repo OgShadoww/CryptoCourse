@@ -43,11 +43,11 @@
     bottom: -50px;
     /* width: 340px; */
 }
-.course__cards__item__etherium {
+.course__cards__item__ethereum {
     position: absolute;
-    right: -45%;
-    top: -85%;
-    width: 400px;
+    right: 0%;
+    top: -45%;
+    width: 130px;
     transform: translateY(50%);
     transition: transform 2s .6s;
 }

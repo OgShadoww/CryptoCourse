@@ -45,7 +45,7 @@ let forwhomCard3 = document.querySelector('#forwhom__cards__item_3')
 let course = document.querySelector('.course')
 let courseItemOne = document.querySelector('.course__cards__item_one')
 let courseItemTwo = document.querySelector('.course__cards__item_two')
-let courseEtherium = document.querySelector('.course__cards__item__etherium')
+let courseEthereum = document.querySelector('.course__cards__item__ethereum')
 
 document.addEventListener('scroll', () => {
     // button to scroll begin
@@ -65,7 +65,7 @@ document.addEventListener('scroll', () => {
     if(window.scrollY >= course.scrollHeight) {
         courseItemOne.style.transform = `translate(0px)`
         courseItemTwo.style.transform = `translate(0px)`
-        courseEtherium.style.transform = `0%`
+        courseEthereum.style.transform = `0%`
     }
     else {
         header.forEach(header => {
