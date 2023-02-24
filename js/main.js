@@ -1,11 +1,13 @@
+document.body.style.overflow = 'hidden'
 document.body.onload = () => {
     setTimeout(() => {
+        document.body.style.overflow = 'auto'
         let preloader = document.querySelector('.preloader')
 
         if(!preloader.classList.contains('done')) {
             preloader.classList.add('done')
         }
-    }, 1000)
+    }, 200)
 }
 // burger menu
 let burgerMenuOpen = document.querySelector('.burger-menu__open')
