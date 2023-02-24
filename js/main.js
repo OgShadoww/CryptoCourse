@@ -1,18 +1,17 @@
 document.body.style.overflow = 'hidden'
 document.body.onload = () => {
-    setTimeout(() => {
-        document.body.style.overflow = 'auto'
-        let preloader = document.querySelector('.preloader')
+    document.body.style.overflow = 'auto'
+    let preloader = document.querySelector('.preloader')
 
-        if(!preloader.classList.contains('done')) {
-            preloader.classList.add('done')
-        }
-    }, 200)
+    if(!preloader.classList.contains('done')) {
+        preloader.classList.add('done')
+    }
 }
 // burger menu
 let burgerMenuOpen = document.querySelector('.burger-menu__open')
 let burgerMenuContent = document.querySelector('.burger-menu__content')
 let burgerMenuClose = document.querySelector('.burger-menu__close')
+let burgerMenuContentItem = document.querySelectorAll('.menu__content__body__item')
 
 burgerMenuOpen.addEventListener('click', () => {
     burgerMenuContent.classList.add('active')
@@ -21,6 +20,12 @@ burgerMenuOpen.addEventListener('click', () => {
 burgerMenuClose.addEventListener('click', () => {
     burgerMenuContent.classList.remove('active')
     document.body.style.overflow = 'auto'
+})
+burgerMenuContentItem.forEach(el => {
+    el.addEventListener('click', () => {
+        burgerMenuContent.classList.remove('active')
+        document.body.style.overflow = 'auto'
+    })
 })
 // scroll to begin
 let toBegin = document.querySelector('.button__up')
@@ -55,7 +60,6 @@ document.addEventListener('scroll', () => {
         forwhomCard1.style.transform = `translateX(0px)`
         forwhomCard2.style.transform = `translateX(0px)`
         forwhomCard3.style.transform = `translateY(0px)`
-        // forwhomLight.style.transform = `translateY(-${window.scrollY / 2}px)`
     }
     // course animate add
     if(window.scrollY >= course.scrollHeight) {
@@ -69,9 +73,7 @@ document.addEventListener('scroll', () => {
         })
     }
 })
-
 // accordion
-
 let accordionItemHeader = document.querySelectorAll('.accordion__item__header').forEach(el => {
     let parent = el.parentElement
     let content = el.nextElementSibling
@@ -83,7 +85,6 @@ let accordionItemHeader = document.querySelectorAll('.accordion__item__header').
         plus.classList.toggle('active')
     })
 })
-
 // popup
 let openPopup = document.querySelector('.sidebar')
 let popup = document.querySelector('.popup')
@@ -101,7 +102,6 @@ popupContent.addEventListener('click', (e) => {
     e.stopPropagation()
 })
 // hover effect
-
 let buttonJoin = document.querySelector('.begin-page__info__button')
 let buttonJoinTextOne = document.querySelector('.begin-page__info__button__text_one')
 let buttonJoinTextTwo = document.querySelector('.begin-page__info__button__text_two')

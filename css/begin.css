@@ -77,9 +77,11 @@
 .begin-page__info__info__item__subtitle {
     color: #A0A0A4;
     font-size: 14px;
+    white-space: nowrap;
 }
 .begin-page__info__info__item__title {
     color: #F5F6FF;
+    white-space: nowrap;
     font-size: 14px;
 }
 .begin-page__photo {

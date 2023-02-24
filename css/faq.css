@@ -114,6 +114,9 @@
     .accordion__item__content {
         font-size: 13px;
     }
+    .faq__light__left {
+        display: none;
+    }
 }
 @media (max-width: 460px) { 
     .accordion__item__header {

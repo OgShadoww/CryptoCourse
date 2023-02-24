@@ -152,4 +152,7 @@
     .course__cards__item_two {
         transition: transform 2s .4s;
     }
+    .course__line__light {
+        display: none;
+    }
 }
