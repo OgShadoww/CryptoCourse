@@ -101,22 +101,27 @@ popupContent.addEventListener('click', (e) => {
 // hover effect
 
 let buttonJoin = document.querySelector('.begin-page__info__button')
-let buttonJoinText = document.querySelector('.begin-page__info__button span')
+let buttonJoinTextOne = document.querySelector('.begin-page__info__button__text_one')
+let buttonJoinTextTwo = document.querySelector('.begin-page__info__button__text_two')
 
 buttonJoin.addEventListener('mouseenter', () => {
-    buttonJoinText.textContent = 'Та отримати бонус'
+    buttonJoinTextTwo.classList.add('active')
+    buttonJoinTextOne.classList.remove('active')
 })
 buttonJoin.addEventListener('mouseleave', () => {
-    buttonJoinText.textContent = 'Приєднатись зараз'
+    buttonJoinTextTwo.classList.remove('active')
+    buttonJoinTextOne.classList.add('active')
 })
 
 if(window.innerWidth <= 800) {
     setInterval(() => {
-        if(buttonJoinText.textContent === 'Та отримати бонус') {
-            buttonJoinText.textContent = 'Приєднатись зараз'
+        if(buttonJoinTextOne.classList.contains('active')) {
+            buttonJoinTextTwo.classList.add('active')
+            buttonJoinTextOne.classList.remove('active')
         }
         else {
-            buttonJoinText.textContent = 'Та отримати бонус'
+            buttonJoinTextOne.classList.add('active')
+            buttonJoinTextTwo.classList.remove('active')
         }
     }, 5000)
 }
