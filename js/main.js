@@ -85,22 +85,6 @@ let accordionItemHeader = document.querySelectorAll('.accordion__item__header').
         plus.classList.toggle('active')
     })
 })
-// popup
-let openPopup = document.querySelector('.sidebar')
-let popup = document.querySelector('.popup')
-let popupContent = document.querySelector('.popup__content')
-
-openPopup.addEventListener('click', () => {
-    popup.classList.add('active')
-    popupContent.classList.add('active')
-})
-popup.addEventListener('click', () => {
-    popup.classList.remove('active')
-    popupContent.classList.remove('active')
-})
-popupContent.addEventListener('click', (e) => {
-    e.stopPropagation()
-})
 // hover effect
 let buttonJoin = document.querySelector('.begin-page__info__button')
 let buttonJoinTextOne = document.querySelector('.begin-page__info__button__text_one')
@@ -127,3 +111,4 @@ if(window.innerWidth <= 800) {
         }
     }, 5000)
 }
+
